@@ -1,12 +1,12 @@
 import pytest
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.edge.options import Options
 
 
 @pytest.fixture
 def driver():
-    chrome_options = Options()
-    chrome_options.add_argument("--start-maximized")
-    driver = webdriver.Chrome(options=chrome_options)
+    edge_options = Options()
+    edge_options.add_argument("--start-maximized")
+    driver = webdriver.Edge(options=edge_options)
     driver.get("https://www.onliner.by/")
     yield driver

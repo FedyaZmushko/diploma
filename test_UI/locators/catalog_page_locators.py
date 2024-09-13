@@ -1,7 +1,5 @@
 from selenium.webdriver.common.by import By
 
-BN_ELECTRONIKA = By.XPATH, '//span[contains(text(), "Электроника")]'
-BN_AUDIO = By.XPATH, '//*[contains(text(), "Аудиотехника")]'
-BN_HEADPHONES = By.XPATH, '//*[contains(text(), "Наушники")]'
-
-CHECKBOX_GENERAL_PRIME = By.XPATH, '(//div[@class="i-checkbox__faux"])[1]'
+BN_CATALOG = By.XPATH, '//*[@class="b-main-navigation__link"]'
+BN_COMPUTERS = By.XPATH, '//*[contains(text(), "Компьютеры и сети")]'
+BN_LAPTOP = By.XPATH, '//*[@class="catalog-navigation-list__dropdown-item"][1]'
